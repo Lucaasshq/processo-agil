@@ -290,10 +290,13 @@ p{ line-height:1.65; margin:0 0 1em; color:inherit; }
 
 /* ---------- artefatos table ---------- */
 .artifacts-table{ width:100%; border-collapse:collapse; background:var(--card-bg); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow-card); }
-.artifacts-table th,.artifacts-table td{ text-align:left; padding:.9rem 1.1rem; border-bottom:1px solid var(--line); font-size:.92rem; }
+.artifacts-table{ color:var(--ink); }
+.artifacts-table th,.artifacts-table td{ text-align:left; padding:.9rem 1.1rem; border-bottom:1px solid var(--line); font-size:.92rem; color:var(--ink); }
 .artifacts-table thead th{ background:var(--navy); color:var(--chalk); font-family:var(--f-mono); text-transform:uppercase; letter-spacing:.06em; font-size:.72rem; }
+.artifacts-table tbody td{ color:var(--ink); }
 .artifacts-table tbody tr:last-child td{ border-bottom:none; }
 .artifacts-table tbody tr:hover{ background:var(--cream); }
+.artifacts-table tbody tr:nth-child(even){ background:#f5f3ea; }
 .table-scroll{ overflow-x:auto; border-radius:var(--radius); }
 
 /* ---------- práticas ágeis ---------- */
