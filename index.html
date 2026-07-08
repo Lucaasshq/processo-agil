@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apito Inicial — Processo Ágil de Software | PDS Corporativo</title>
+<meta name="description" content="Apito Inicial: um processo ágil de desenvolvimento de software com tema de futebol, criado para o PDS Corporativo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="#topo" class="brand"><span class="ball"></span> Apito Inicial</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <ul class="navlinks" id="navLinks">
+      <li><a href="#visao">Visão Geral</a></li>
+      <li><a href="#papeis">Escalação</a></li>
+      <li><a href="#ciclo">Ciclo de Vida</a></li>
+      <li><a href="#atividades">Atividades</a></li>
+      <li><a href="#artefatos">Artefatos</a></li>
+      <li><a href="#praticas">Práticas Ágeis</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="topo">
+
+<section class="hero">
+  <div class="hero-num" aria-hidden="true">10</div>
+  <div class="container hero-inner">
+    <span class="hero-badge">PDS Corporativo · Processo Ágil de Desenvolvimento de Software</span>
+    <h1>Apito <span>Inicial</span></h1>
+    <p class="lede">Um processo ágil onde cada sprint é uma partida, o backlog é o campeonato e cada entrega de valor é um gol validado. Times, papéis e cerimônias do desenvolvimento de software, traduzidos para a linguagem do futebol.</p>
+    <div class="hero-cta">
+      <a href="#ciclo" class="btn btn-primary">Ver o Diagrama de Atividades</a>
+      <a href="#atividades" class="btn btn-ghost">Conhecer as Atividades</a>
+    </div>
+    <div class="scoreboard">
+      <div>Modelo<b>Ágil Híbrido</b></div>
+      <div>Frameworks<b>Scrum · XP · Kanban · DevOps</b></div>
+      <div>Papéis em Campo<b>7</b></div>
+      <div>Atividades<b>9 + 1 transversal</b></div>
+      <div>Duração da Rodada<b>2 semanas</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="section cream" id="visao">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow on-light">Visão Geral</span>
+      <h2>O que é o Apito Inicial?</h2>
+    </div>
+    <div class="overview-grid">
+      <div>
+        <p class="lede">Um processo de desenvolvimento bem definido funciona como o plano de jogo de um técnico: alinha as expectativas do elenco, define a posição de cada jogador em campo e garante que o time entregue um produto de qualidade dentro do tempo e do orçamento combinados com a diretoria.</p>
+        <p>No <strong>PDS Corporativo</strong>, adotamos o <strong>Apito Inicial</strong> — um processo ágil híbrido, que combina práticas de Scrum, XP, Kanban e DevOps. O trabalho é organizado em <strong>rodadas</strong> (sprints) de curta duração, cada uma contendo atividades claras de refinamento, planejamento, desenvolvimento, testes, implantação e revisão, além de uma atividade de gerência que atua continuamente, como a comissão técnica de um clube.</p>
+        <p>O objetivo de cada rodada é sempre o mesmo: entregar um incremento de software funcionando e validado — um <strong>gol</strong> — para a torcida (usuários e stakeholders).</p>
+      </div>
+      <div class="stat-cards">
+        <div class="stat-card"><div class="num">7</div><div class="lbl">Papéis em Campo</div></div>
+        <div class="stat-card"><div class="num">9+1</div><div class="lbl">Atividades do Ciclo</div></div>
+        <div class="stat-card"><div class="num">4</div><div class="lbl">Frameworks Ágeis Combinados</div></div>
+        <div class="stat-card"><div class="num">2</div><div class="lbl">Semanas por Rodada</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="papeis" style="background:var(--chalk);">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow on-light">Escalação</span>
+      <h2>Papéis em Campo</h2>
+      <p class="lede">Cada posição em campo tem uma função clara. No Apito Inicial, os papéis tradicionais de um processo de software ganham a camisa de um time.</p>
+    </div>
+    <div class="squad-grid">
+
+      <article class="player-card" style="--role-color:var(--c-diretoria)">
+        <div class="pc-head">
+          <div class="pc-number">P</div>
+          <div class="pc-titles"><span class="pc-role">Diretoria do Clube</span><h3>Patrocinador / Cliente Executivo</h3></div>
+        </div>
+        <div class="pc-body"><ul>
+          <li>Define a visão do produto e os objetivos estratégicos da temporada.</li>
+          <li>Aprova orçamento, prazos e prioridades de alto nível.</li>
+          <li>Participa da pré-temporada e das grandes decisões do campeonato.</li>
+        </ul></div>
+      </article>
+
+      <article class="player-card" style="--role-color:var(--c-tecnico)">
+        <div class="pc-head">
+          <div class="pc-number">T</div>
+          <div class="pc-titles"><span class="pc-role">Técnico</span><h3>Gerente de Projeto / Scrum Master</h3></div>
+        </div>
+        <div class="pc-body"><ul>
+          <li>Facilita o planejamento das rodadas e remove impedimentos do time.</li>
+          <li>Acompanha o cronograma e o orçamento da temporada.</li>
+          <li>Garante que as regras do processo sejam seguidas por todos.</li>
+          <li>Conduz a gerência contínua junto à comissão técnica.</li>
+        </ul></div>
+      </article>
+
+      <article class="player-card" style="--role-color:var(--c-capitao)">
+        <div class="pc-head">
+          <div class="pc-number">C</div>
+          <div class="pc-titles"><span class="pc-role">Capitão</span><h3>Product Owner</h3></div>
+        </div>
+        <div class="pc-body"><ul>
+          <li>Representa a voz da torcida (stakeholders) dentro do time.</li>
+          <li>Prioriza e refina o backlog do campeonato.</li>
+          <li>Aprova os incrementos entregues a cada rodada.</li>
+        </ul></div>
+      </article>
+
+      <article class="player-card" style="--role-color:var(--c-elenco)">
+        <div class="pc-head">
+          <div class="pc-number">8</div>
+          <div class="pc-titles"><span class="pc-role">Elenco</span><h3>Desenvolvedores</h3></div>
+        </div>
+        <div class="pc-body"><ul>
+          <li>Implementam as funcionalidades definidas em cada rodada.</li>
+          <li>Escrevem testes unitários e participam de revisões de código.</li>
+          <li>Refatoram o código para manter a qualidade do time.</li>
+        </ul></div>
+      </article>
+
+      <article class="player-card" style="--role-color:var(--c-zagueiro)">
+        <div class="pc-head">
+          <div class="pc-number">4</div>
+          <div class="pc-titles"><span class="pc-role">Zagueiro</span><h3>Analista de Testes / QA</h3></div>
+        </div>
+        <div class="pc-body"><ul>
+          <li>Protege a qualidade do produto: escreve e executa casos de teste.</li>
+          <li>Identifica e reporta bugs antes que cheguem à área.</li>
+          <li>Participa da definição dos critérios de aceite.</li>
+        </ul></div>
+      </article>
+
+      <article class="player-card" style="--role-color:var(--c-goleiro)">
+        <div class="pc-head">
+          <div class="pc-number">1</div>
+          <div class="pc-titles"><span class="pc-role">Goleiro</span><h3>Responsável por Implantação / DevOps</h3></div>
+        </div>
+        <div class="pc-body"><ul>
+          <li>Garante que os incrementos aprovados cheguem em segurança à produção.</li>
+          <li>Cuida da esteira de integração e entrega contínua (CI/CD).</li>
+          <li>Monitora o ambiente logo após cada implantação.</li>
+        </ul></div>
+      </article>
+
+      <article class="player-card" style="--role-color:var(--c-capitao)">
+        <div class="pc-head">
+          <div class="pc-number">12</div>
+          <div class="pc-titles"><span class="pc-role">Torcida (12º Jogador)</span><h3>Usuários Finais / Stakeholders</h3></div>
+        </div>
+        <div class="pc-body"><ul>
+          <li>Utiliza o produto e fornece feedback real sobre as entregas.</li>
+          <li>Participa das coletivas de imprensa (Sprint Review).</li>
+          <li>Influencia as prioridades do próximo campeonato (versão).</li>
+        </ul></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section pitch" id="ciclo">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow on-dark">Ciclo de Vida</span>
+      <h2>A Temporada: Diagrama de Atividades</h2>
+      <p class="lede">O ciclo de vida do processo funciona como uma temporada de futebol: começa com uma pré-temporada de planejamento, segue em rodadas repetidas (sprints) até o produto atingir o objetivo, e termina com o apito final. A gerência (comissão técnica) atua continuamente, do primeiro ao último minuto.</p>
+    </div>
+    <div class="diagram-wrap">
+<svg viewBox="0 0 900 1644" xmlns="http://www.w3.org/2000/svg" class="pitch-diagram" role="img" aria-label="Diagrama de atividades do processo Apito Inicial">
+<rect x="0" y="0" width="900" height="1644" fill="url(#pitchStripes)" />
+
+<defs>
+  <pattern id="pitchStripes" width="900" height="72" patternUnits="userSpaceOnUse">
+    <rect width="900" height="36" fill="var(--grass-1)" />
+    <rect y="36" width="900" height="36" fill="var(--grass-2)" />
+  </pattern>
+  <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto">
+    <polygon points="0 0, 8 3.5, 0 7" fill="var(--chalk)" />
+  </marker>
+  <marker id="arrowHeadDash" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto">
+    <polygon points="0 0, 8 3.5, 0 7" fill="#ffffff" opacity="0.85"/>
+  </marker>
+</defs>
+
+<line x1="0" y1="822.0" x2="900" y2="822.0" stroke="var(--chalk)" stroke-opacity="0.12" stroke-width="2"/>
+<rect x="174.0" y="274" width="552" height="1060" rx="26" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="10 8" opacity="0.55"/>
+<text x="192.0" y="308" class="band-label">COMISSÃO TÉCNICA · GERÊNCIA CONTÍNUA</text>
+<circle cx="450.0" cy="45" r="34" fill="var(--chalk)" stroke="var(--navy)" stroke-width="4"/>
+<text x="450.0" y="41" class="start-text">APITO</text>
+<text x="450.0" y="61" class="start-text">INICIAL</text>
+<line x1="450.0" y1="79" x2="450.0" y2="118" stroke="var(--chalk)" stroke-width="3" marker-end="url(#arrowHead)"/>
+<g>
+<rect x="220.0" y="118" width="460" height="84" rx="16" fill="var(--card-bg)"/>
+<rect x="228.0" y="132" width="8" height="56" rx="4" fill="#C9930A"/>
+<circle cx="260.0" cy="160.0" r="21" fill="#C9930A"/>
+<text x="260.0" y="167.0" class="jersey-num">1</text>
+<text x="298.0" y="155.0" class="node-title">Concepção e Visão</text>
+<text x="298.0" y="177.0" class="node-title">do Produto</text>
+<text x="298.0" y="190" class="node-role" fill="#C9930A">Diretoria + Capitão + Técnico</text>
+</g>
+<line x1="450.0" y1="202" x2="450.0" y2="300" stroke="var(--chalk)" stroke-width="3" marker-end="url(#arrowHead)"/>
+<g>
+<rect x="220.0" y="300" width="460" height="84" rx="16" fill="var(--card-bg)"/>
+<rect x="228.0" y="314" width="8" height="56" rx="4" fill="#1D63C9"/>
+<circle cx="260.0" cy="342.0" r="21" fill="#1D63C9"/>
+<text x="260.0" y="349.0" class="jersey-num">2</text>
+<text x="298.0" y="337.0" class="node-title">Convocação e Refinamento</text>
+<text x="298.0" y="359.0" class="node-title">do Backlog</text>
+<text x="298.0" y="372" class="node-role" fill="#1D63C9">Capitão (Product Owner)</text>
+</g>
+<line x1="450.0" y1="384" x2="450.0" y2="432" stroke="var(--chalk)" stroke-width="3" marker-end="url(#arrowHead)"/>
+<g>
+<rect x="220.0" y="432" width="460" height="84" rx="16" fill="var(--card-bg)"/>
+<rect x="228.0" y="446" width="8" height="56" rx="4" fill="#0B1F3A"/>
+<circle cx="260.0" cy="474.0" r="21" fill="#0B1F3A"/>
+<text x="260.0" y="481.0" class="jersey-num">3</text>
+<text x="298.0" y="469.0" class="node-title">Prancheta Tática:</text>
+<text x="298.0" y="491.0" class="node-title">Planejamento da Rodada</text>
+<text x="298.0" y="504" class="node-role" fill="#0B1F3A">Técnico + Elenco</text>
+</g>
+<line x1="450.0" y1="516" x2="450.0" y2="564" stroke="var(--chalk)" stroke-width="3" marker-end="url(#arrowHead)"/>
+<g>
+<rect x="220.0" y="564" width="460" height="84" rx="16" fill="var(--card-bg)"/>
+<rect x="228.0" y="578" width="8" height="56" rx="4" fill="#1F9D55"/>
+<circle cx="260.0" cy="606.0" r="21" fill="#1F9D55"/>
+<text x="260.0" y="613.0" class="jersey-num">4</text>
+<text x="298.0" y="601.0" class="node-title">Em Campo:</text>
+<text x="298.0" y="623.0" class="node-title">Desenvolvimento</text>
+<text x="298.0" y="636" class="node-role" fill="#1F9D55">Elenco (Desenvolvedores)</text>
+</g>
+<line x1="450.0" y1="648" x2="450.0" y2="696" stroke="var(--chalk)" stroke-width="3" marker-end="url(#arrowHead)"/>
+<g>
+<rect x="220.0" y="696" width="460" height="84" rx="16" fill="var(--card-bg)"/>
+<rect x="228.0" y="710" width="8" height="56" rx="4" fill="#E8752B"/>
+<circle cx="260.0" cy="738.0" r="21" fill="#E8752B"/>
+<text x="260.0" y="745.0" class="jersey-num">5</text>
+<text x="298.0" y="733.0" class="node-title">Arbitragem e VAR:</text>
+<text x="298.0" y="755.0" class="node-title">Testes</text>
+<text x="298.0" y="768" class="node-role" fill="#E8752B">Zagueiro (QA)</text>
+</g>
+<line x1="450.0" y1="780" x2="450.0" y2="828" stroke="var(--chalk)" stroke-width="3" marker-end="url(#arrowHead)"/>
+<g>
+<rect x="220.0" y="828" width="460" height="84" rx="16" fill="var(--card-bg)"/>
+<rect x="228.0" y="842" width="8" height="56" rx="4" fill="#0B1F3A"/>
+<circle cx="260.0" cy="870.0" r="21" fill="#0B1F3A"/>
+<text x="260.0" y="877.0" class="jersey-num">6</text>
+<text x="298.0" y="865.0" class="node-title">Revisão de Lance:</text>
+<text x="298.0" y="887.0" class="node-title">Revisão e Integração</text>
+<text x="298.0" y="900" class="node-role" fill="#0B1F3A">Técnico + Elenco + Goleiro</text>
+</g>
+<line x1="450.0" y1="912" x2="450.0" y2="960" stroke="var(--chalk)" stroke-width="3" marker-end="url(#arrowHead)"/>
+<g>
+<rect x="220.0" y="960" width="460" height="84" rx="16" fill="var(--card-bg)"/>
+<rect x="228.0" y="974" width="8" height="56" rx="4" fill="#7C3AED"/>
+<circle cx="260.0" cy="1002.0" r="21" fill="#7C3AED"/>
+<text x="260.0" y="1009.0" class="jersey-num">7</text>
+<text x="298.0" y="997.0" class="node-title">Comemoração do Gol:</text>
+<text x="298.0" y="1019.0" class="node-title">Implantação (Deploy)</text>
+<text x="298.0" y="1032" class="node-role" fill="#7C3AED">Goleiro (DevOps)</text>
+</g>
+<line x1="450.0" y1="1044" x2="450.0" y2="1092" stroke="var(--chalk)" stroke-width="3" marker-end="url(#arrowHead)"/>
+<g>
+<rect x="220.0" y="1092" width="460" height="84" rx="16" fill="var(--card-bg)"/>
+<rect x="228.0" y="1106" width="8" height="56" rx="4" fill="#1D63C9"/>
+<circle cx="260.0" cy="1134.0" r="21" fill="#1D63C9"/>
+<text x="260.0" y="1141.0" class="jersey-num">8</text>
+<text x="298.0" y="1129.0" class="node-title">Coletiva de Imprensa:</text>
+<text x="298.0" y="1151.0" class="node-title">Sprint Review</text>
+<text x="298.0" y="1164" class="node-role" fill="#1D63C9">Capitão + Torcida</text>
+</g>
+<line x1="450.0" y1="1176" x2="450.0" y2="1224" stroke="var(--chalk)" stroke-width="3" marker-end="url(#arrowHead)"/>
+<g>
+<rect x="220.0" y="1224" width="460" height="84" rx="16" fill="var(--card-bg)"/>
+<rect x="228.0" y="1238" width="8" height="56" rx="4" fill="#1F9D55"/>
+<circle cx="260.0" cy="1266.0" r="21" fill="#1F9D55"/>
+<text x="260.0" y="1273.0" class="jersey-num">9</text>
+<text x="298.0" y="1261.0" class="node-title">Vestiário:</text>
+<text x="298.0" y="1283.0" class="node-title">Retrospectiva</text>
+<text x="298.0" y="1296" class="node-role" fill="#1F9D55">Todo o Elenco</text>
+</g>
+<line x1="450.0" y1="1308" x2="450.0" y2="1364" stroke="var(--chalk)" stroke-width="3" marker-end="url(#arrowHead)"/>
+<polygon points="450.0,1364 640.0,1429.0 450.0,1494 260.0,1429.0" fill="var(--card-bg)" stroke="var(--gold)" stroke-width="3"/>
+<text x="450.0" y="1421.0" class="node-title" text-anchor="middle">Produto atingiu o</text>
+<text x="450.0" y="1445.0" class="node-title" text-anchor="middle">objetivo da temporada?</text>
+<path d="M 260.0 1429.0 C 130.0 1429.0, 130.0 342.0, 220.0 342.0"
+  fill="none" stroke="var(--gold)" stroke-width="3.5" stroke-dasharray="2 7" stroke-linecap="round" marker-end="url(#arrowHead)"/>
+<text x="140.0" y="873.5" class="loop-label" transform="rotate(-90 140.0 873.5)">NÃO · nova rodada (sprint)</text>
+<line x1="450.0" y1="1494" x2="450.0" y2="1550" stroke="var(--chalk)" stroke-width="3" marker-end="url(#arrowHead)"/>
+<text x="468.0" y="1528" class="loop-label-sim">SIM</text>
+<circle cx="450.0" cy="1584" r="34" fill="var(--gold)" stroke="var(--navy)" stroke-width="4"/>
+<text x="450.0" y="1580" class="start-text" fill="var(--navy)">APITO</text>
+<text x="450.0" y="1600" class="start-text" fill="var(--navy)">FINAL</text>
+</svg>    </div>
+    <div class="legend">
+      <span><i style="background:var(--c-diretoria)"></i> Diretoria / Torcida</span>
+      <span><i style="background:var(--c-capitao)"></i> Capitão (PO)</span>
+      <span><i style="background:var(--c-tecnico)"></i> Técnico (Gerente)</span>
+      <span><i style="background:var(--c-elenco)"></i> Elenco (Devs)</span>
+      <span><i style="background:var(--c-zagueiro)"></i> Zagueiro (QA)</span>
+      <span><i style="background:var(--c-goleiro)"></i> Goleiro (DevOps)</span>
+    </div>
+  </div>
+</section>
+
+<section class="section cream" id="atividades">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow on-light">As Jogadas</span>
+      <h2>Descrição das Atividades</h2>
+      <p class="lede">Cada atividade do processo tem um responsável, uma prática ágil associada e um artefato produzido — como uma súmula de partida detalhando cada lance da rodada.</p>
+    </div>
+    <div class="activity-list">
+
+      <article class="activity" style="--role-color:var(--c-diretoria)">
+        <div class="act-num">1</div>
+        <div>
+          <span class="role-tag">Diretoria + Capitão + Técnico</span>
+          <h3>Concepção e Visão do Produto (Pré-Temporada)</h3>
+          <p>Antes da bola rolar, a diretoria do clube define contra quem o time vai jogar: o mercado, o público-alvo e o problema que o produto deve resolver. Nesta atividade única, realizada no início do projeto, são definidos a visão do produto, o escopo inicial, a arquitetura de alto nível e os critérios gerais de sucesso da temporada.</p>
+          <div class="act-meta">
+            <div><b>Prática Ágil</b>Product Vision / Inception (Scrum)</div>
+            <div><b>Artefatos</b>Documento de Visão do Produto; Backlog inicial do campeonato</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="activity" style="--role-color:var(--c-capitao)">
+        <div class="act-num">2</div>
+        <div>
+          <span class="role-tag">Capitão (Product Owner)</span>
+          <h3>Convocação e Refinamento do Backlog</h3>
+          <p>A cada rodada, o capitão reavalia a lista de convocados: revisa histórias de usuário existentes, detalha critérios de aceite e inclui novas necessidades trazidas pela torcida. É uma atividade contínua, que mantém o backlog sempre pronto para a próxima escalação.</p>
+          <div class="act-meta">
+            <div><b>Prática Ágil</b>Backlog Refinement (Scrum)</div>
+            <div><b>Artefatos</b>Backlog do Campeonato atualizado; Histórias de Usuário priorizadas</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="activity" style="--role-color:var(--c-tecnico)">
+        <div class="act-num">3</div>
+        <div>
+          <span class="role-tag">Técnico + Elenco</span>
+          <h3>Prancheta Tática: Planejamento da Rodada</h3>
+          <p>No vestiário, antes de cada rodada, o técnico apresenta a proposta de jogo e o elenco decide, em conjunto, quais itens do backlog entrarão na sprint. A meta da rodada é definida e o compromisso do time é registrado antes de o apito soar.</p>
+          <div class="act-meta">
+            <div><b>Prática Ágil</b>Sprint Planning (Scrum); Planning Poker (XP)</div>
+            <div><b>Artefatos</b>Sprint Backlog (Escalação da Rodada); Meta da Sprint</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="activity" style="--role-color:var(--c-elenco)">
+        <div class="act-num">4</div>
+        <div>
+          <span class="role-tag">Elenco (Desenvolvedores)</span>
+          <h3>Em Campo: Desenvolvimento</h3>
+          <p>É a partida em si. O elenco implementa as funcionalidades definidas, seguindo os padrões de código do clube. Alinhamentos rápidos e diários mantêm todos sincronizados sobre o andamento do jogo e eventuais impedimentos.</p>
+          <div class="act-meta">
+            <div><b>Prática Ágil</b>Daily Scrum (Alinhamento Pré-Jogo); Pair Programming; TDD; Kanban de tarefas</div>
+            <div><b>Artefatos</b>Código-fonte incremental; Quadro de tarefas da rodada</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="activity" style="--role-color:var(--c-zagueiro)">
+        <div class="act-num">5</div>
+        <div>
+          <span class="role-tag">Zagueiro (QA)</span>
+          <h3>Arbitragem e VAR: Testes</h3>
+          <p>Assim como o árbitro e o VAR garantem que as regras foram cumpridas, esta atividade valida a qualidade do incremento por meio de testes unitários, de integração e de aceitação. Nenhum gol é validado sem revisão.</p>
+          <div class="act-meta">
+            <div><b>Prática Ágil</b>Testes Contínuos / TDD (XP); Integração Contínua</div>
+            <div><b>Artefatos</b>Casos de Teste; Súmula de Bugs; Suíte de testes automatizados</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="activity" style="--role-color:var(--c-tecnico)">
+        <div class="act-num">6</div>
+        <div>
+          <span class="role-tag">Técnico + Elenco + Goleiro</span>
+          <h3>Revisão de Lance: Revisão e Integração</h3>
+          <p>Como o replay de um lance polêmico, o time revisa o incremento produzido: faz code review, ajusta o que for necessário e integra o código à branch principal, preparando o terreno para a implantação.</p>
+          <div class="act-meta">
+            <div><b>Prática Ágil</b>Code Review; Integração Contínua (CI)</div>
+            <div><b>Artefatos</b>Pull Requests aprovados; Build integrado</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="activity" style="--role-color:var(--c-goleiro)">
+        <div class="act-num">7</div>
+        <div>
+          <span class="role-tag">Goleiro (DevOps)</span>
+          <h3>Comemoração do Gol: Implantação (Deploy)</h3>
+          <p>Quando o incremento é validado, o gol é comemorado: o time realiza a implantação em produção seguindo um checklist de release e monitora o ambiente logo após o apito, garantindo estabilidade no pós-jogo.</p>
+          <div class="act-meta">
+            <div><b>Prática Ágil</b>Continuous Deployment (DevOps/CI-CD); Feature Flags</div>
+            <div><b>Artefatos</b>Release Notes (Boletim de Lançamento); Checklist de Deploy; Ambiente em produção atualizado</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="activity" style="--role-color:var(--c-capitao)">
+        <div class="act-num">8</div>
+        <div>
+          <span class="role-tag">Capitão + Torcida</span>
+          <h3>Coletiva de Imprensa: Sprint Review</h3>
+          <p>Ao final da rodada, o capitão apresenta o incremento entregue à torcida, como uma entrevista coletiva pós-jogo. O feedback recebido nesse momento é essencial para ajustar as próximas jogadas do campeonato.</p>
+          <div class="act-meta">
+            <div><b>Prática Ágil</b>Sprint Review (Scrum)</div>
+            <div><b>Artefatos</b>Incremento de Software (Gol Validado); Ata de Feedback</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="activity" style="--role-color:var(--c-elenco)">
+        <div class="act-num">9</div>
+        <div>
+          <span class="role-tag">Todo o Elenco</span>
+          <h3>Vestiário: Retrospectiva</h3>
+          <p>De volta ao vestiário, o time analisa a própria atuação: o que funcionou, o que precisa melhorar e quais táticas devem ser abandonadas. O resultado são ações concretas de melhoria para a próxima rodada.</p>
+          <div class="act-meta">
+            <div><b>Prática Ágil</b>Retrospectiva (Scrum); Melhoria Contínua (Kanban/Kaizen)</div>
+            <div><b>Artefatos</b>Ata da Retrospectiva (Ata do Vestiário); Plano de Ações de Melhoria</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="activity transversal">
+        <div class="act-num" style="color:var(--navy)">∞</div>
+        <div>
+          <span class="role-tag" style="color:var(--navy)">Técnico + Diretoria (transversal)</span>
+          <h3>Comissão Técnica: Gerência Contínua</h3>
+          <p>Como a comissão técnica de um clube, a gerência atua o tempo todo, em paralelo a todas as rodadas: gerenciamento de riscos, acompanhamento do cronograma e do orçamento, comunicação com a diretoria e com a torcida, e gestão do elenco. É a atividade de bastidores que sustenta toda a temporada — incluindo o monitoramento pós-implantação.</p>
+          <div class="act-meta">
+            <div><b>Prática Ágil</b>Gestão Visual (Kanban); Reuniões de Acompanhamento; Gestão Ágil de Riscos</div>
+            <div><b>Artefatos</b>Relatório de Status (Raio-X do Time); Registro de Riscos (Boletim Médico); Cronograma da Temporada</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="artefatos">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow on-dark">Troféus da Temporada</span>
+      <h2>Produtos de Trabalho (Artefatos)</h2>
+      <p class="lede">Resumo de todos os artefatos gerados em cada atividade do processo, com o respectivo responsável.</p>
+    </div>
+    <div class="table-scroll">
+      <table class="artifacts-table">
+        <thead>
+          <tr><th>Nº</th><th>Atividade</th><th>Responsável</th><th>Artefato(s) Gerado(s)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Concepção e Visão do Produto</td><td>Diretoria, Capitão, Técnico</td><td>Documento de Visão do Produto; Backlog inicial</td></tr>
+          <tr><td>2</td><td>Convocação e Refinamento do Backlog</td><td>Capitão</td><td>Backlog do Campeonato atualizado; Histórias de Usuário</td></tr>
+          <tr><td>3</td><td>Planejamento da Rodada</td><td>Técnico, Elenco</td><td>Sprint Backlog; Meta da Sprint</td></tr>
+          <tr><td>4</td><td>Desenvolvimento (Em Campo)</td><td>Elenco</td><td>Código-fonte incremental; Quadro de tarefas</td></tr>
+          <tr><td>5</td><td>Testes (Arbitragem e VAR)</td><td>Zagueiro (QA)</td><td>Casos de Teste; Súmula de Bugs; Suíte automatizada</td></tr>
+          <tr><td>6</td><td>Revisão e Integração</td><td>Técnico, Elenco, Goleiro</td><td>Pull Requests aprovados; Build integrado</td></tr>
+          <tr><td>7</td><td>Implantação (Comemoração do Gol)</td><td>Goleiro (DevOps)</td><td>Release Notes; Checklist de Deploy; Ambiente atualizado</td></tr>
+          <tr><td>8</td><td>Sprint Review (Coletiva de Imprensa)</td><td>Capitão, Torcida</td><td>Incremento de Software; Ata de Feedback</td></tr>
+          <tr><td>9</td><td>Retrospectiva (Vestiário)</td><td>Todo o Elenco</td><td>Ata da Retrospectiva; Plano de Ações de Melhoria</td></tr>
+          <tr><td>∞</td><td>Gerência Contínua (Comissão Técnica)</td><td>Técnico, Diretoria</td><td>Relatório de Status; Registro de Riscos; Cronograma</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section cream" id="praticas">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow on-light">Manual Tático</span>
+      <h2>Práticas Ágeis Aplicadas</h2>
+      <p class="lede">O Apito Inicial combina práticas de diferentes frameworks ágeis, cada uma aplicada em momentos específicos do ciclo de vida.</p>
+    </div>
+    <div class="practice-groups">
+
+      <div class="practice-card">
+        <span class="framework-tag">Scrum</span>
+        <h3>Cerimônias e Eventos</h3>
+        <ul>
+          <li><b>Product Vision / Inception</b> — na pré-temporada, define o rumo do campeonato.</li>
+          <li><b>Backlog Refinement</b> — mantém a lista de convocados sempre atualizada.</li>
+          <li><b>Sprint Planning</b> — a prancheta tática de cada rodada.</li>
+          <li><b>Daily Scrum</b> — o alinhamento pré-jogo diário do elenco.</li>
+          <li><b>Sprint Review</b> — a coletiva de imprensa pós-jogo.</li>
+          <li><b>Retrospectiva</b> — a análise no vestiário.</li>
+        </ul>
+      </div>
+
+      <div class="practice-card">
+        <span class="framework-tag">XP · Extreme Programming</span>
+        <h3>Engenharia e Qualidade</h3>
+        <ul>
+          <li><b>Planning Poker</b> — estimativa coletiva do esforço de cada jogada.</li>
+          <li><b>Pair Programming</b> — jogadas em dupla, dois desenvolvedores no mesmo lance.</li>
+          <li><b>TDD</b> — testes escritos antes do código, como um treino antes do jogo.</li>
+          <li><b>Refatoração</b> — ajuste fino da tática sem mudar o resultado do jogo.</li>
+          <li><b>Integração Contínua</b> — cada passe é testado antes de seguir para o próximo.</li>
+        </ul>
+      </div>
+
+      <div class="practice-card">
+        <span class="framework-tag">Kanban</span>
+        <h3>Fluxo e Gestão Visual</h3>
+        <ul>
+          <li><b>Quadro de Tarefas</b> — o placar visual do andamento da rodada.</li>
+          <li><b>Limite de WIP</b> — evita que o time jogue tarefas demais ao mesmo tempo.</li>
+          <li><b>Gestão Visual de Riscos</b> — o "boletim médico" do time, sempre visível.</li>
+          <li><b>Melhoria Contínua (Kaizen)</b> — pequenos ajustes de tática a cada rodada.</li>
+        </ul>
+      </div>
+
+      <div class="practice-card">
+        <span class="framework-tag">DevOps / CI-CD</span>
+        <h3>Implantação e Operação</h3>
+        <ul>
+          <li><b>Integração Contínua</b> — o código de todos os jogadores se junta em uma única partida.</li>
+          <li><b>Deploy Contínuo</b> — cada gol validado vai para produção com segurança.</li>
+          <li><b>Feature Flags</b> — permitem "escalar" uma funcionalidade aos poucos.</li>
+          <li><b>Monitoramento Pós-Deploy</b> — o goleiro observa o pós-jogo em produção.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="brand"><span class="ball"></span> Apito Inicial</div>
+    <p>Processo ágil de desenvolvimento de software criado com tema de futebol para a disciplina de Processos de Desenvolvimento de Software (PDS Corporativo). Projeto acadêmico e fictício, com fins didáticos.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
